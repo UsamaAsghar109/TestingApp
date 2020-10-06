@@ -12,21 +12,38 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         app:srcCompat="@drawable/firebase" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_marginTop="20dp"
-        android:background="@color/yellow"
-        android:text="Next Activiy"
-        android:padding="10dp"
-        android:textColor="#ffffff"
-        android:layout_below="@id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbutton"
+                android:padding="10dp"
+                android:text="Register"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbutton"
+                android:padding="10dp"
+                android:text="Login"
+                android:textColor="#ffffff" />
+
+    </LinearLayout>
 
 
 </RelativeLayout>

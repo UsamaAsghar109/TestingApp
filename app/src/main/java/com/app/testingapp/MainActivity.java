@@ -1,11 +1,10 @@
 package com.app.testingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,15 +12,14 @@ import android.widget.Button;
 import com.spark.submitbutton.SubmitButton;
 
 import java.util.Timer;
-import java.util.TimerTask;
 
 
 public class MainActivity extends AppCompatActivity {
 
     Timer timer;
     SubmitButton submitButton;
-    Button button;
-    private Handler mHandler=new Handler();
+    Button loginbtn,registerbtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
 //                    finish();
 //                }
 //            },3000);
-        button=findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        registerbtn=findViewById(R.id.register);
+        registerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,LoginActivity.class);
+                Intent intent=new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });
