@@ -30,7 +30,7 @@
             android:background="@color/white"
             android:drawablePadding="4dp"
             android:hint="Username"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:padding="10dp" />
 
     </androidx.cardview.widget.CardView>
